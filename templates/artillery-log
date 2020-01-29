@@ -1,0 +1,10 @@
+Started phase {{phase}}, duration: {{duration}} @ {{startTime}}
+
+{{#progressReports}}
+Report {{> report}}
+{{/progressReports}}
+
+All virtual users finished
+{{#summaryReport}}
+Summary report {{> report}}
+{{/summaryReport}}

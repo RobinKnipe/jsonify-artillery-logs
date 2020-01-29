@@ -1,0 +1,44 @@
+Started phase {{phase}}, duration: {{duration}} @ {{startTime}}
+
+{{#progressReports}}
+Report @ {{timestamp}}
+  Scenarios launched:  {{scenariosLaunched}}
+  Scenarios completed: {{scenariosCompleted}}
+  Requests completed:  {{requestsCompleted}}
+  RPS sent: {{rpsSent}}
+  Request latency:
+    min: {{latency.min}}
+    max: {{latency.max}}
+    median: {{latency.median}}
+    p95: {{latency.p95}}
+    p99: {{latency.p99}}
+{{#counters}}
+  {{counterName}}:
+{{#counts}}
+    {{name}}: {{count}}{{#percent}} ({{percent}}%){{/percent}}
+{{/counts}}
+{{/counters}}
+
+{{/progressReports}}
+
+All virtual users finished
+{{#summaryReport}}
+Summary report @ {{timestamp}}
+  Scenarios launched:  {{scenariosLaunched}}
+  Scenarios completed: {{scenariosCompleted}}
+  Requests completed:  {{requestsCompleted}}
+  RPS sent: {{rpsSent}}
+  Request latency:
+    min: {{latency.min}}
+    max: {{latency.max}}
+    median: {{latency.median}}
+    p95: {{latency.p95}}
+    p99: {{latency.p99}}
+{{#counters}}
+  {{counterName}}:
+{{#counts}}
+    {{name}}: {{count}}{{#percent}} ({{percent}}%){{/percent}}
+{{/counts}}
+{{/counters}}
+
+{{/summaryReport}}

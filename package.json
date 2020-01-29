@@ -1,0 +1,36 @@
+{
+  "name": "jsonify-artillery-logs",
+  "version": "0.0.0",
+  "description": "Transforms the standard `artillery.js` logs into a more object friendly form.",
+  "main": "jsonify-artillery-logs.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "dev": "mocha test -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinKnipe/jsonify-artillery-logs.git"
+  },
+  "keywords": [
+    "artillery.js",
+    "JSON",
+    "logs"
+  ],
+  "author": "Robin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/RobinKnipe/jsonify-artillery-logs/issues"
+  },
+  "homepage": "https://github.com/RobinKnipe/jsonify-artillery-logs#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "mustache": "^3.0.1",
+    "reverse-mustache": "^1.9.0"
+  }
+}

@@ -1,0 +1,4 @@
+  {{counterName}}:
+{{#counts}}
+    {{name}}: {{count}}{{#percent}} ({{percent}}%){{/percent}}
+{{/counts}}

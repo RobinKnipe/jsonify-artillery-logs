@@ -1,0 +1,57 @@
+Started phase 0, duration: 60s @ some time today
+
+Report @ +10s
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  20
+  RPS sent: 2
+  Request latency:
+    min: 5
+    max: 500
+    median: 250
+    p95: 300
+    p99: 450
+  Codes:
+    200: 19
+    404: 1
+  Errors:
+    someError: 1
+    someOtherError: 2
+
+Report @ +20s
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  20
+  RPS sent: 2
+  Request latency:
+    min: 5
+    max: 500
+    median: 250
+    p95: 300
+    p99: 450
+  Codes:
+    200: 20
+
+
+All virtual users finished
+Summary report @ +10s
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  20
+  RPS sent: 2
+  Request latency:
+    min: 5
+    max: 500
+    median: 250
+    p95: 300
+    p99: 450
+  Scenario counts:
+    scenario 1: 10 (50%)
+    scenario 2: 10 (50%)
+  Codes:
+    200: 39
+    404: 1
+  Errors:
+    someError: 1
+    someOtherError: 2
+

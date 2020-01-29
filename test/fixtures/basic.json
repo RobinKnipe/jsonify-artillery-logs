@@ -1,0 +1,102 @@
+{
+  "phase": 0,
+  "duration": "60s",
+  "startTime": "some time today",
+  "progressReports": [{
+    "timestamp": "+10s",
+    "scenariosLaunched": 10,
+    "scenariosCompleted": 10,
+    "requestsCompleted": 20,
+    "rpsSent": 2,
+    "latency": {
+      "min": 5,
+      "max": 500,
+      "median": 250,
+      "p95": 300,
+      "p99": 450
+    },
+    "counters": [{
+      "counterName": "Codes",
+      "counts": [{
+        "name": 200,
+        "count": 19
+      }, {
+        "name": 404,
+        "count": 1
+      }]
+    }, {
+      "counterName": "Errors",
+      "counts": [{
+        "name": "someError",
+        "count": 1
+      }, {
+        "name": "someOtherError",
+        "count": 2
+      }]
+    }]
+  }, {
+    "timestamp": "+20s",
+    "scenariosLaunched": 10,
+    "scenariosCompleted": 10,
+    "requestsCompleted": 20,
+    "rpsSent": 2,
+    "latency": {
+      "min": 5,
+      "max": 500,
+      "median": 250,
+      "p95": 300,
+      "p99": 450
+    },
+    "counters": [{
+      "counterName": "Codes",
+      "counts": [{
+        "name": 200,
+        "count": 20
+      }]
+    }]
+  }],
+  "summaryReport": {
+    "timestamp": "+10s",
+    "scenariosLaunched": 10,
+    "scenariosCompleted": 10,
+    "requestsCompleted": 20,
+    "rpsSent": 2,
+    "latency": {
+      "min": 5,
+      "max": 500,
+      "median": 250,
+      "p95": 300,
+      "p99": 450
+    },
+    "counters": [{
+      "counterName": "Scenario counts",
+      "counts": [{
+        "name": "scenario 1",
+        "count": 10,
+        "percent": 50
+      }, {
+        "name": "scenario 2",
+        "count": 10,
+        "percent": 50
+      }]
+    }, {
+      "counterName": "Codes",
+      "counts": [{
+        "name": 200,
+        "count": 39
+      }, {
+        "name": 404,
+        "count": 1
+      }]
+    }, {
+      "counterName": "Errors",
+      "counts": [{
+        "name": "someError",
+        "count": 1
+      }, {
+        "name": "someOtherError",
+        "count": 2
+      }]
+    }]
+  }
+}

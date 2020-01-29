@@ -1,0 +1,14 @@
+@ {{timestamp}}
+  Scenarios launched:  {{scenariosLaunched}}
+  Scenarios completed: {{scenariosCompleted}}
+  Requests completed:  {{requestsCompleted}}
+  RPS sent: {{rpsSent}}
+  Request latency:
+    min: {{latency.min}}
+    max: {{latency.max}}
+    median: {{latency.median}}
+    p95: {{latency.p95}}
+    p99: {{latency.p99}}
+{{#counters}}
+{{> counter}}
+{{/counters}}
